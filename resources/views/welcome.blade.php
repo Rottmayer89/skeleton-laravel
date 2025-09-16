@@ -15,9 +15,17 @@
 
 </head>
 
-<body class="bg-stone-900">
+<body class="bg-gray-900 text-stone-300 flex flex-col items-center justify-center gap-10">
 
-    <h1 class='text-rose-500'>This is Laravel</h1>
+    <h1 class='text-lime-500 text-xl pt-5 font-bold'>This is Laravel Skeleton, Tailwind, AlpineJS, Pest</h1>
+
+
+    <div x-data="{ count: 0 }">
+        <button x-on:click="count++"
+            class='bg-indigo-500 text-white py-2 px-4 rounded-md cursor-pointer'>Increment</button>
+
+        <span x-text="count" class='ml-5 font-bold'></span>
+    </div>
 
 
 </body>
